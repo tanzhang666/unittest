@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: bobcfc-unittest-service
+  cloud:
+    nacos:
+      config:
+        #        10.162.1.140:8848
+        #        10.162.4.60:8848
+        server-addr: nacos.com
+        namespace: 5a4ada11-4580-4586-bc21-9807c47b03e8
+        group: CORE_SYS
+        file-extension: yaml
+        shared-configs: rocketmq.yaml,common.yaml, httpPool.yaml
+      username: system-ncre
+      password: P.N_acos!1031!Ncre
+  main:
+    allow-bean-definition-overriding: true
